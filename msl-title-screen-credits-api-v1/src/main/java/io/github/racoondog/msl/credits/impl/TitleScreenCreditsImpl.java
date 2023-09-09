@@ -21,6 +21,7 @@ import net.minecraft.client.gui.DrawContext;
 import net.minecraft.text.Text;
 import org.jetbrains.annotations.ApiStatus;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -103,7 +104,8 @@ public class TitleScreenCreditsImpl implements TitleScreenCredits {
             }
         }
 
-        creditModifications = null;
+        // Make immutable, throws if used after this point.
+        creditModifications = List.of();
 
         sortCredits();
 

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "msl-title-screen-credits-api-v1",
+  "version": "${version}",
+  "name": "MSL Title Screen Credits API (v1)",
+  "description": "Common methods for extending the Meteor title screen credits.",
+  "authors": [
+    "Crosby"
+  ],
+  "contact": {
+    "sources": "https://github.com/RacoonDog/MSL",
+    "issues": "https://github.com/RacoonDog/MSL/issues"
+  },
+  "environment": "client",
+  "license": "MIT",
+
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=${minecraft_version}",
+    "meteor-client": "*"
+  },
+
+  "mixins": [
+    "msl-title-screen-credits-api-v1.mixins.json"
+  ],
+
+  "custom": {
+    "modmenu": {
+      "badges": [ "library" ],
+      "parent": {
+        "id": "meteor-standard-libraries",
+        "name": "Meteor Standard Libraries",
+        "description": "Extending the Meteor Client addon API",
+        "badges": [ "library" ]
+      }
+    }
+  }
+}

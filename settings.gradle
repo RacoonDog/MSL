@@ -1,0 +1,14 @@
+pluginManagement {
+    repositories {
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+include "msl-settings-api-v1"
+include "msl-commands-api-v1"
+include "msl-title-screen-credits-api-v1"

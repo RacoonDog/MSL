@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "meteor-standard-libraries",
+  "version": "${version}",
+  "name": "Meteor Standard Libraries",
+  "description": "Extending the Meteor Client addon API",
+  "authors": [
+    "Crosby"
+  ],
+  "contact": {
+    "sources": "https://github.com/RacoonDog/MSL",
+    "issues": "https://github.com/RacoonDog/MSL/issues"
+  },
+  "environment": "client",
+  "license": "MIT",
+
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=${minecraft_version}",
+    "meteor-client": "*"
+  },
+
+  "custom": {
+    "modmenu": {
+      "badges": [ "library" ]
+    }
+  }
+}

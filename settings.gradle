@@ -9,6 +9,7 @@ pluginManagement {
     }
 }
 
-include "msl-settings-api-v1"
 include "msl-commands-api-v1"
+include "msl-settings-api-v1"
+include "msl-themes-api-v1"
 include "msl-title-screen-credits-api-v1"

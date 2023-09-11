@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.racoondog.msl.themes.impl.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "GuiThemeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

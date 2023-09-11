@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Environment(EnvType.CLIENT)
-@Mixin(TitleScreenCredits.class)
+@Mixin(value = TitleScreenCredits.class, remap = false)
 public abstract class TitleScreenCreditsMixin {
     @Inject(method = "render", at = @At("HEAD"), cancellable = true)
     private static void injectRender(DrawContext context, CallbackInfo ci) {

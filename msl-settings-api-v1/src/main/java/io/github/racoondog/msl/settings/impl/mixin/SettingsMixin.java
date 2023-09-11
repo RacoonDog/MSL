@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import java.util.List;
 
 @Environment(EnvType.CLIENT)
-@Mixin(Settings.class)
+@Mixin(value = Settings.class, remap = false)
 public abstract class SettingsMixin implements ISettings {
     @Shadow @Final public List<SettingGroup> groups;
 

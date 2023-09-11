@@ -64,7 +64,7 @@ repositories {
 
 configurations {
     moduleInclude.extendsFrom(include)
-    moduleInclude.extendsFrom(modImplementation)
+    moduleInclude.extendsFrom(implementation)
 }
 
 dependencies {
@@ -73,9 +73,10 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "meteordevelopment:meteor-client:${project.meteor_version}"
 
-    moduleInclude project(":msl-settings-api-v1")
-    moduleInclude project(":msl-commands-api-v1")
-    moduleInclude project(":msl-title-screen-credits-api-v1")
+    implementation project(path: ":msl-commands-api-v1", configuration: "namedElements")
+    implementation project(path: ":msl-settings-api-v1", configuration: "namedElements")
+    implementation project(path: ":msl-themes-api-v1", configuration: "namedElements")
+    implementation project(path: ":msl-title-screen-credits-api-v1", configuration: "namedElements")
 }
 
 processResources {
